@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>Mikesell Media Experience</title>
+        <link href="css/reset.css" rel="stylesheet" type="text/css" />
+        <link href="css/styles.css" rel="stylesheet" type="text/css" />
+        <script type="text/javascript" src="js/jquery-2.2.4.min.js"></script>
+        <script type="text/javascript" src="js/jquery.easing.1.3.js" ></script>
+    </head>
+    <body>
+
+    <div id="videoContainer">
+
+        <video muted="muted" autoplay loop id="videoPlayer">
+          <source src="video/natureVideo4.mp4" type="video/mp4">
+        </video>
+
+    </div>
+
+    <div id="background"></div>
+
+    <div id="audioContainer">
+
+        <div id="audioButton">
+            <svg class="audioDropdown" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26.13 20.74">
+                <path d="M15.53,7.53h0m-.76.57V23.9l-6.62-5A1.94,1.94,0,0,0,7,18.47H3.86V13.53H7a1.94,1.94,0,0,0,1.2-.41l6.62-5m.43-2.47a1.39,1.39,0,0,0-.88.31L7,11.53H3.43a1.65,1.65,0,0,0-1.57,1.72v5.5a1.65,1.65,0,0,0,1.57,1.72H7l7.37,5.59a1.39,1.39,0,0,0,.88.31,1.65,1.65,0,0,0,1.57-1.72V7.35A1.65,1.65,0,0,0,15.2,5.63Z" transform="translate(-1.86 -5.63)"/>
+                <path d="M20,22.13a1,1,0,0,1-.8-.41,1,1,0,0,1,.22-1.4,5.73,5.73,0,0,0-.32-9.46,1,1,0,0,1-.32-1.38,1,1,0,0,1,1.38-.31,7.72,7.72,0,0,1,.43,12.77A1,1,0,0,1,20,22.13Z" transform="translate(-1.86 -5.63)"/>
+                <path d="M22.82,24.89a1,1,0,0,1-.81-.41,1,1,0,0,1,.22-1.4,9.09,9.09,0,0,0,3.18-4.18,9.21,9.21,0,0,0-3.7-11,1,1,0,1,1,1.07-1.69,11.21,11.21,0,0,1,4.5,13.39,11.08,11.08,0,0,1-3.88,5.1A1,1,0,0,1,22.82,24.89Z" transform="translate(-1.86 -5.63)"/>
+            </svg>
+        </div>
+
+        <audio id="forestAudio" loop volume="10">
+            <source src="audio/Spring_Day_Forest.mp3" type="audio/mpeg"/>
+        </audio>
+
+        <div id="forestTrigger" class="playPause">
+
+        <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22.48 27.89">
+            <path class="forestIcon" d="M20.82,5.69l-.15,0c-1.2-2.78-3.29-4.6-5.74-4.6s-4.54,1.82-5.74,4.6l-.14,0c-3,0-5.36,3.43-5.36,7.8,0,4,2,7.24,4.69,7.71v5a.94.94,0,1,0,1.87,0v-5.1a4.42,4.42,0,0,0,1.57-.92,5.26,5.26,0,0,0,2.18,1v6.9a.94.94,0,1,0,1.87,0v-6.9a5.31,5.31,0,0,0,2.18-1,4.42,4.42,0,0,0,1.57.92v5.1a.94.94,0,1,0,1.87,0v-5c2.67-.47,4.68-3.66,4.68-7.71C26.17,9.12,23.82,5.69,20.82,5.69ZM9.05,19.43c-1.89,0-3.48-2.72-3.48-5.94,0-2.92,1.32-5.41,3-5.84a15,15,0,0,0-.44,3.56,12.43,12.43,0,0,0,2.37,7.65A2.31,2.31,0,0,1,9.05,19.43Zm8.52-1.33a4.75,4.75,0,0,1-.71.65,3.31,3.31,0,0,1-1.93.68A3.26,3.26,0,0,1,13,18.75a4.75,4.75,0,0,1-.71-.65,6.68,6.68,0,0,1-.63-.81A11.1,11.1,0,0,1,10,11.21,12.4,12.4,0,0,1,10.38,8c.08-.32.2-.62.3-.91s.23-.6.36-.88C12,4.29,13.37,3,14.93,3s3,1.31,3.9,3.27a7.68,7.68,0,0,1,.35.88c.11.29.22.59.31.91a12.86,12.86,0,0,1,.39,3.17,11,11,0,0,1-1.69,6.08A6.63,6.63,0,0,1,17.57,18.1Zm3.25,1.33a2.34,2.34,0,0,1-1.44-.57,12.43,12.43,0,0,0,2.38-7.65,14.46,14.46,0,0,0-.45-3.56c1.66.43,3,2.92,3,5.84C24.3,16.71,22.71,19.43,20.82,19.43Z" transform="translate(-3.69 -1.11)"/>
+        </svg>
+    </div>
+
+        <audio id="birdsAudio" loop volume=".5">
+            <source src="audio/spring-birds.mp3" type="audio/mpeg"/>
+        </audio>
+
+<div id="birdsTrigger" class="playPause">
+<svg class="musicIcon" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21.87 27">
+    <path d="M23.86,2a.34.34,0,0,1,0-.1.93.93,0,0,0-.05-.1.7.7,0,0,0-.08-.2.71.71,0,0,0-.12-.18l-.12-.13-.2-.13-.15-.06A1,1,0,0,0,22.9,1l-.1,0-.1,0a.41.41,0,0,0-.11,0L10.22,3.49s-.06,0-.1,0a.84.84,0,0,0-.2.08l-.17.11-.14.15a.71.71,0,0,0-.11.17,1.42,1.42,0,0,0-.08.18.78.78,0,0,0,0,.21.43.43,0,0,0,0,.11V21a5.69,5.69,0,0,0-3.6-.09c-2.58.73-4.19,2.8-3.65,4.72a3.26,3.26,0,0,0,2.23,2.12A5.27,5.27,0,0,0,6,28a6.5,6.5,0,0,0,1.73-.24,5.34,5.34,0,0,0,3.42-2.6,4.77,4.77,0,0,0,.41-1.81V5.43l10.21-2V18.54a5.66,5.66,0,0,0-3.59-.09c-2.59.72-4.19,2.79-3.65,4.71a3.24,3.24,0,0,0,2.22,2.12,5.38,5.38,0,0,0,1.62.25,6.58,6.58,0,0,0,1.73-.25,5.83,5.83,0,0,0,2.86-1.74,4.27,4.27,0,0,0,.54-.84,4.44,4.44,0,0,0,.43-1.83V2.08S23.86,2,23.86,2ZM7.1,25.68a3.67,3.67,0,0,1-2.1,0c-.21-.07-.71-.27-.81-.66C4,24.42,4.89,23.4,6.34,23a4.49,4.49,0,0,1,1.16-.16c.92,0,1.63.34,1.76.8C9.44,24.26,8.55,25.28,7.1,25.68Zm14.17-3.54a4.06,4.06,0,0,1-3.9,1.1c-.21-.07-.71-.27-.82-.66-.18-.64.71-1.65,2.16-2.06a4.47,4.47,0,0,1,1.15-.16c.93,0,1.64.33,1.77.79A1.21,1.21,0,0,1,21.27,22.14Z" transform="translate(-2.01 -1)"/></svg>
+</div>
+
+
+         <audio id="creekAudio" loop volume=".3">
+            <source src="audio/Small_Stream_Flowing.mp3" type="audio/mpeg"/>
+        </audio>
+
+    <div id="creekTrigger" class="playPause">
+
+    <svg class="creekIcon" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 27.09 16.5">
+        <path d="M19.86,21.5c-2.41,0-4.64-1.22-6.62-2.3-3.78-2.07-6.52-3.57-10.09,1.56a1.17,1.17,0,1,1-1.93-1.34c4.78-6.88,9.42-4.33,13.15-2.29,4,2.2,7.2,3.94,11.58-2.35a1.18,1.18,0,0,1,1.94,1.35C25.05,20.2,22.36,21.5,19.86,21.5Z" transform="translate(-1 -5)"/>
+        <path d="M19.86,12.23c-2.41,0-4.64-1.22-6.62-2.31C9.45,7.85,6.72,6.36,3.15,11.49a1.18,1.18,0,0,1-1.93-1.35C6,3.27,10.64,5.82,14.37,7.85c4,2.21,7.2,3.94,11.58-2.34a1.18,1.18,0,1,1,1.94,1.34C25.05,10.93,22.36,12.23,19.86,12.23Z" transform="translate(-1 -5)"/>
+    </svg>
+</div>
+
+
+    </div>
+
+    <div id="closePath"></div>
+
+
+
+
+
+    <div id="contentContainer">
+        <h1 class="welcome">WELCOME</h1>
+        <p class="lets">enjoy the <span>sights</span> & <span>sounds</span> of nature</p>
+
+        <a href="#" id="begin"></a>
+
+    </div>
+
+
+<div id="pathHolder">
+        
+    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+     viewBox="0 0 1165 5701.15">
+    <path class="path" d="M581.41,0c2,108.99,12.13,201.57-104,353.09c-108.66,141.77-358.17,371.4-294,602.6
+    c22,79.27,104,154.03,180.71,202.46c138.63,87.53,324.36,158.91,343.67,310.42c10.87,85.35-33.14,167.38-65.61,248.15
+    c-32.47,80.77-52.16,176.74,1.12,247.99c27.1,36.25,69.36,60.48,109.47,85.06c101.39,62.1,198.28,134.59,261.7,229.11
+    s89.32,214.53,44.19,317.22c-61.72,140.44-231.35,212.01-386.01,270.35c-77,29.04-154,58.09-231,87.13
+    c-49.66,18.74-101.3,38.75-135.87,75.92c-80.67,86.75-33.38,217.26,17.39,320.76c50.77,103.5,89.22,189.78,8.75,276.67
+    c-25.24,27.25-60.27,45.85-86.65,72.19c-26.38,26.36-43.1,66.77-22.67,97.12c9.72,14.44,26.14,24,42.34,32.5
+    c80.74,42.38,170.26,71.15,262.54,84.38c87.07,12.48,178.73,11.82,258.26,46.1c133.32,57.47,206.92,261.86,145.59,383
+    c-61.34,121.18-212.04,179.36-348.05,231.56c-136.01,52.21-284.16,123.11-325.42,251c-16.34,50.65-13.81,106.14-38.75,153.86
+    c-26.54,50.78-81.64,87.4-101.2,140.69c-40.22,109.58,92.9,212.38,219.27,231.45c126.37,19.07,259.73-7,381.9,27.8
+    c149.26,42.5,257.16,181.7,250.05,322.57"/>
+
+    <div class="section" id="sectionZero">
+        
+        <h3 id="introText">Take your time.
+            <br>
+            Stop and look around along the way.</h3>
+    </div>
+
+    <div class="section" id="sectionOne">
+
+        <a id="circle1" class="circles">
+        </a>
+
+        <a id="circle2" class="circles"></a>
+
+    </div>
+
+
+
+    <div class="section" id="sectionTwo">
+
+        <a id="circle3" class="circles"></a>
+
+        <a id="circle4" class="circles"></a>
+
+    </div>
+
+
+
+    <div class="section" id="sectionThree">
+
+        <a id="circle5" class="circles"></a>
+
+        <a id="circle6" class="circles"></a>
+
+         <a id="circle7" class="circles"></a>
+
+    </div>
+
+
+
+    <div class="section" id="sectionFour">
+
+
+        <a id="circle8" class="circles"></a>
+
+        <a id="circle9" class="circles"></a>
+
+    </div>
+
+
+
+    <div class="section" id="sectionFive">
+
+        <a id="circle10" class="circles"></a>
+
+    </div>
+
+
+
+
+    <div class="section" id="sectionSix">
+
+        <a id="circle11" class="circles"></a>
+
+        <a id="circle12" class="circles"></a>
+
+    </div>
+
+
+
+    <div class="section" id="sectionSeven">
+
+        <a id="circle13" class="circles"></a>
+
+        <a id="circle14" class="circles"></a>
+
+        <a id="circle15" class="circles"></a>
+
+    </div>
+
+
+
+    <div class="section" id="sectionEight">
+
+        <a id="circle16" class="circles"></a>
+
+        <a id="circle17" class="circles"> </a>
+
+    </div>
+
+
+        
+    <div class="section" id="sectionNine">
+
+        <a id="circle18" class="circles"></a>
+
+        <a id="circle19" class="circles"></a>
+
+    </div>
+
+    </svg>
+
+</div>
+
+
+<div id="photoContainer">
+
+        <img class="photo a" id="photo1" src="images/IMG_9978.jpg" width="450px">
+
+        <img class="photo b" id="photo2" src="images/IMG_9992.jpg" width="450px">
+
+        <img class="photo c" id="photo3" src="images/IMG_0005.jpg" width="700px">
+
+        <img class="photo d" id="photo4" src="images/IMG_0009.jpg" width="700px">
+
+        <img class="photo a" id="photo5" src="images/IMG_0042.jpg" width="450px">
+
+        <img class="photo b" id="photo6" src="images/IMG_0063.jpg" width="450px">
+
+        <img class="photo c" id="photo7" src="images/IMG_0064.jpg" width="700px">
+
+        <img class="photo d" id="photo8" src="images/IMG_0094.jpg" width="700px">
+
+        <img class="photo c" id="photo9" src="images/IMG_0098.jpg" width="700px">
+
+        <img class="photo d" id="photo10" src="images/IMG_0186.jpg" width="700px">
+
+        <img class="photo a" id="photo11" src="images/IMG_0152.jpg" width="450px">
+
+        <img class="photo c" id="photo12" src="images/IMG_0163.jpg" width="700px">
+
+        <img class="photo a" id="photo13" src="images/IMG_0173.jpg" width="700px">
+
+        <img class="photo b" id="photo14" src="images/IMG_0197.jpg" width="450px">
+
+        <img class="photo d" id="photo15" src="images/IMG_0233.jpg" width="700px">
+
+        <img class="photo c" id="photo16" src="images/IMG_0238.jpg" width="700px">
+
+        <img class="photo a" id="photo17" src="images/IMG_0258.jpg" width="450px">
+
+        <img class="photo b" id="photo18" src="images/IMG_0266.jpg" width="700px">
+
+        <img class="photo a" id="photo19" src="images/IMG_0283.jpg" width="700px">
+        
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    
+    	
+        
+        <script type="text/javascript" src="js/custom_behaviors.js"></script>
+    </body>
+</html>
